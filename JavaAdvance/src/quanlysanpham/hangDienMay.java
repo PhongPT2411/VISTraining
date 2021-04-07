@@ -19,7 +19,7 @@ public class hangDienMay extends hangHoa {
         tonKho = s.nextInt();
     }
 
-    public void inBoSung() {
+    public void in() {
         super.in();
         System.out.print(" Thời gian bảo hành: " + thoiGianBH);
         System.out.println(" Công suất: " + congSuat);
