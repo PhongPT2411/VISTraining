@@ -3,14 +3,14 @@ package quanlysanpham;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class hangSanhSu extends hangHoa {
+public class HangSanhSu extends HangHoa {
     String nhaSanXuat;
     String ngayNhapKho;
     int tonKho;
     int luuKho;
     Scanner s = new Scanner(System.in);
 
-    public void nhapThongTin(ArrayList<hangHoa> obj) {
+    public void nhapThongTin(ArrayList<HangHoa> obj) {
         super.nhapThongTin(obj);
         System.out.println("Nhập nhà sản xuất: ");
         nhaSanXuat = s.nextLine();

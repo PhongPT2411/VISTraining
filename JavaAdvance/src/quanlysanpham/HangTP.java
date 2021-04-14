@@ -3,7 +3,7 @@ package quanlysanpham;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class hangTP extends hangHoa {
+public class HangTP extends HangHoa {
     String ngaySX;
     String ngayHH;
     String nCC;
@@ -11,7 +11,7 @@ public class hangTP extends hangHoa {
     boolean hetHan;
     Scanner s = new Scanner(System.in);
 
-    public void nhapThongTin(ArrayList<hangHoa> obj) {
+    public void nhapThongTin(ArrayList<HangHoa> obj) {
         super.nhapThongTin(obj);
         System.out.println("Nhập ngày tháng năm sản xuất: ");
         ngaySX = s.nextLine();

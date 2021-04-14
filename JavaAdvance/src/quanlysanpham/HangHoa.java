@@ -1,10 +1,9 @@
 package quanlysanpham;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class hangHoa {
+public class HangHoa {
     String maHang;
     String tenHang;
     int soLuongTon;
@@ -12,7 +11,7 @@ public class hangHoa {
     static Scanner s = new Scanner(System.in);
 
 
-    public void nhapThongTin(ArrayList<hangHoa> obj) {
+    public void nhapThongTin(ArrayList<HangHoa> obj) {
         int h = 1;
         int k = 1;
         while (h == 1) {
@@ -60,7 +59,7 @@ public class hangHoa {
 
 
     public static void main(String[] args) {
-        ArrayList<hangHoa> danhSachHangHoa = new ArrayList<hangHoa>();
+        ArrayList<HangHoa> danhSachHangHoa = new ArrayList<HangHoa>();
         int k = 1;
         while (k == 1) {
             System.out.println("Menu:");
@@ -83,17 +82,17 @@ public class hangHoa {
                         int a1 = s.nextInt();
                         switch (a1) {
                             case 1:
-                                hangHoa tt = new hangTP();
+                                HangHoa tt = new HangTP();
                                 tt.nhapThongTin(danhSachHangHoa);
                                 danhSachHangHoa.add(tt);
                                 break;
                             case 2:
-                                hangHoa tt1 = new hangSanhSu();
+                                HangHoa tt1 = new HangSanhSu();
                                 tt1.nhapThongTin(danhSachHangHoa);
                                 danhSachHangHoa.add(tt1);
                                 break;
                             case 3:
-                                hangHoa tt2 = new hangDienMay();
+                                HangHoa tt2 = new HangDienMay();
                                 tt2.nhapThongTin(danhSachHangHoa);
                                 danhSachHangHoa.add(tt2);
                                 break;
@@ -104,7 +103,7 @@ public class hangHoa {
                     break;
                 case 2:
                     if (danhSachHangHoa.size() == 0){
-                    System.out.println("Chưa có hàng hóa được thêm vào! Vui lòng thêm hàng hóa để hiển thị.");
+                        System.out.println("Chưa có hàng hóa được thêm vào! Vui lòng thêm hàng hóa để hiển thị.");
                         break;}
                     for (int i = 0; i < danhSachHangHoa.size(); i++) {
                         System.out.println("Sản phẩm " + (i + 1) + ":");

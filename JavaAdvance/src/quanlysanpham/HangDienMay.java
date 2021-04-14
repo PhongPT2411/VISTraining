@@ -1,15 +1,15 @@
 package quanlysanpham;
 
-import java.util.ArrayList;
-import java.util.Scanner;
+        import java.util.ArrayList;
+        import java.util.Scanner;
 
-public class hangDienMay extends hangHoa {
+public class HangDienMay extends HangHoa {
     int thoiGianBH;
     int congSuat;
     int tonKho;
     Scanner s = new Scanner(System.in);
 
-    public void nhapThongTin(ArrayList<hangHoa> obj) {
+    public void nhapThongTin(ArrayList<HangHoa> obj) {
         super.nhapThongTin(obj);
         System.out.println("Nhập thời gian bảo hành(tháng): ");
         thoiGianBH = s.nextInt();
@@ -34,3 +34,4 @@ public class hangDienMay extends hangHoa {
             System.out.println("Hàng không bán được!");
     }
 }
+
